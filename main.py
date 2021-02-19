@@ -17,7 +17,7 @@ G = 1
 x = 1
 contador = 0
 smallcont = 0
-while contador<10:
+while contador<20:
     sm = SmallWorld()
     x = sm.GenerateSmallWorld(tamanho,smallcont)
     smallcont = smallcont+1
@@ -46,7 +46,7 @@ while contador<10:
         
         for i in range(200):
             edgeswidth.append(5)
-        nx.draw_circular(G,node_size=1000,labels=labels,width=edgeswidth,arrowsize=50)
+        nx.draw_circular(G,node_size=1000,labels=labels,width=edgeswidth,arrowsize=10)
         plt.savefig("figuras/"+str(contador)+".png")
         plt.clf()
         plt.cla()
